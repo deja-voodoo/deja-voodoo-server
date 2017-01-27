@@ -1,0 +1,98 @@
+
+<div class="row">
+  <div class="form-group">
+    <label for="name1">name 1</label>
+    <input ng-model="$ctrl.form.name1" type="text" class="form-control" id="name1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="name2">name 2</label>
+    <input ng-model="$ctrl.form.name2" type="text" class="form-control" id="name2" placeholder="">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-4">
+    <div class="form-inline">
+      <label for="sort">noun 1</label>
+      <select ng-model="$ctrl.form.noun1" class="form-control" id="sort">
+          <option  ng-repeat="noun in $ctrl.nouns"  value="">{{noun.noun}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">noun 2</label>
+      <select ng-model="$ctrl.form.noun2" class="form-control" id="sort">
+          <option  ng-repeat="noun in $ctrl.nouns"  value="">{{noun.noun}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">noun 3</label>
+      <select ng-model="$ctrl.form.noun3" class="form-control" id="sort">
+          <option  ng-repeat="noun in $ctrl.nouns"  value="">{{noun.noun}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">noun 4</label>
+      <select ng-model="$ctrl.form.noun4" class="form-control" id="sort">
+          <option  ng-repeat="noun in $ctrl.nouns"  value="">{{noun.noun}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">noun 5</label>
+      <select ng-model="$ctrl.form.noun5" class="form-control" id="sort">
+          <option  ng-repeat="noun in $ctrl.nouns"  value="">{{noun.noun}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">noun 6</label>
+      <select ng-model="$ctrl.form.noun6" class="form-control" id="sort">
+          <option  ng-repeat="noun in $ctrl.nouns"  value="">{{noun.noun}}</option>
+      </select>
+    </div>
+
+  </div>
+  <div class="col-xs-4">
+    <div class="form-inline">
+      <label for="sort">verb 1</label>
+      <select ng-model="$ctrl.form.verb1" class="form-control" id="sort">
+          <option  ng-repeat="verb in $ctrl.verbs"  value="">{{verb.verb}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">verb 2</label>
+      <select ng-model="$ctrl.form.verb2" class="form-control" id="sort">
+          <option  ng-repeat="verb in $ctrl.verbs"  value="">{{verb.verb}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">verb 3</label>
+      <select ng-model="$ctrl.form.verb3" class="form-control" id="sort">
+          <option  ng-repeat="verb in $ctrl.verbs"  value="">{{verb.verb}}</option>
+      </select>
+    </div>
+
+  </div>
+  <div class="col-xs-4">
+    <div class="form-inline">
+      <label for="sort">adjective 1</label>
+      <select ng-model="$ctrl.form.adj1" class="form-control" id="sort">
+          <option  ng-repeat="adj in $ctrl.adjs"  value="">{{adj.adj}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">adjective 2</label>
+      <select ng-model="$ctrl.form.adj2" class="form-control" id="sort">
+          <option  ng-repeat="adj in $ctrl.adjs"  value="">{{adj.adj}}</option>
+      </select>
+    </div>
+    <div class="form-inline">
+      <label for="sort">adjective 3</label>
+      <select ng-model="$ctrl.form.adj3" class="form-control" id="sort">
+          <option  ng-repeat="adj in $ctrl.adjs"  value="">{{adj.adj}}</option>
+      </select>
+    </div>
+
+  </div>
+</div>
+<button ui-sref="result" ng-click="$ctrl.makeResult($ctrl.form)" class="btn btn-danger">
+  SUBMIT
+</button>
